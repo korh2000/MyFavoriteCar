@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">MyFavoriteCar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+
+    <!--    activity_login-->
+    <string name="login_textViewEmail">Email</string>
+    <string name="login_textViewPassword">Password</string>
+    <string name="login_buttonForgotLogin">Forgot Login</string>
+    <string name="login_buttonLogin">Login</string>
+    <string name="login_buttonRegister">Register</string>
+
+    <!--    activity_register-->
+    <string name="register_textViewEmail">Email</string>
+    <string name="register_textViewPassword">Password</string>
+    <string name="register_textViewReEnterPassword">Reenter pass</string>
+    <string name="register_bottonRegister">Register</string>
+
+    <!--    activity_car-->
+    <string name="car_textViewMyCar">MY CAR</string>
+    <string name="carTextViewBrand">BRAND</string>
+    <string name="carTextViewModel">MODEL</string>
+    <string name="carTextViewYear">YEAR</string>
+    <string name="carTextViewVin">VIN</string>
+    <string name="carTextVievMileageStart">MILEAGE</string>
+    <string name="carTextViewDate">DATE</string>
+    <string name="carTextViewMileageUnit">KM/MILE</string>
+    <string name="carTextViewCurrency">CURRENCY</string>
+    <string name="carTextViewFuel">FUEL</string>
+    <string name="carButtonSave">SAVE&amp;EXIT</string>
+
+
+    <!--menu_activity_main_driver-->
+    <string name="activity_main_driver_car">CAR</string>
+
+    <!--activity_invoice-->
+    <string name="invocesButtonBack">BACK</string>
+    <string name="invocesButtonAdd">ADD</string>
+
+    <!--activity_invoice_forma-->
+    <string name="invoiceFormaTextViewHeader">INVOICE</string>
+    <string name="invoiceFormaTextViewDate">DATE</string>
+    <string name="invoiceFormaTextViewService">SERVICE</string>
+    <string name="invoiceFormaTextViewSeller">SELLER</string>
+    <string name="invoiceFormaTextViewSum">SUM</string>
+    <string name="invoiceFormaTextViewMileage">MILEAGE</string>
+    <string name="invoiceFormaButtonSave">SAVE&amp;EXIT</string>
+    <string name="invoiceFormabuttonDelete">DELETE</string>
+
+
+
+    <string-array name="brand_array">
+        <item>BMV</item>
+        <item>MERSEDES</item>
+        <item>FIAT</item>
+    </string-array>
+
+    <string-array name="mileageUnit_array">
+        <item>KM</item>
+        <item>MILE</item>
+    </string-array>
+
+    <string-array name="fuels_array">
+        <item>PETROL76</item>
+        <item>PETROL80</item>
+        <item>PETROL92</item>
+        <item>PETROL95</item>
+        <item>PETROL98</item>
+        <item>DIESEL</item>
+        <item>GAS</item>
+    </string-array>
+
+    <string-array name="currency_array">
+        <item>USD</item>
+        <item>EURO</item>
+    </string-array>
+
+    <string-array name="services_array">
+        <item>FILLING</item>
+        <item>WASHING</item>
+        <item>TIRE</item>
+        <item>BUYPARTS</item>
+        <item>REPAIR</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.autorost.myfavoritecar.InvoiceForma">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/invoiceFormaTextViewHeader"
+        android:id="@+id/invoiceFormaTextViewHeader"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/invoiceFormaTextViewDate"
+        android:id="@+id/invoiceFormaTextViewDate"
+        android:layout_below="@+id/invoiceFormaTextViewHeader"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/invoiceFormaEditTextDate"
+        android:layout_alignBottom="@+id/invoiceFormaTextViewDate"
+        android:layout_alignStart="@+id/invoiceFormaTextViewHeader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/invoiceFormaTextViewService"
+        android:id="@+id/invoiceFormaTextViewService"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/invoiceFormaTextViewDate"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invoiceFormaSpinnerService"
+        android:layout_alignBottom="@+id/invoiceFormaTextViewService"
+        android:layout_alignStart="@+id/invoiceFormaButtonSave" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/invoiceFormaTextViewSeller"
+        android:id="@+id/invoiceFormaTextViewSeller"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/invoiceFormaTextViewService"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invoiceFormaEditTextSeller"
+        android:layout_alignBottom="@+id/invoiceFormaTextViewSeller"
+        android:layout_alignStart="@+id/invoiceFormaSpinnerService"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/invoiceFormaTextViewSum"
+        android:id="@+id/invoiceFormaTextViewSum"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/invoiceFormaTextViewSeller"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/invoiceFormaEditTextSum"
+        android:layout_alignBottom="@+id/invoiceFormaTextViewSum"
+        android:layout_alignStart="@+id/invoiceFormaEditTextSeller"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/invoiceFormaTextViewMileage"
+        android:id="@+id/invoiceFormaTextViewMileage"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/invoiceFormaTextViewSum"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/invoiceFormaEditTextMileage"
+        android:layout_alignBottom="@+id/invoiceFormaTextViewMileage"
+        android:layout_alignStart="@+id/invoiceFormaEditTextSum"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/invoiceFormaButtonSave"
+        android:id="@+id/invoiceFormaButtonSave"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/invoiceFormabuttonDelete"
+        android:id="@+id/invoiceFormabuttonDelete"
+        android:layout_alignTop="@+id/invoiceFormaButtonSave"
+        android:layout_alignParentEnd="true"
+        android:textColor="#f40a0a" />
+
+</RelativeLayout>

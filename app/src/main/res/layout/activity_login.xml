@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/login_textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/login_textViewEmail"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/login_editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/carTextViewBrand"
+        android:layout_alignStart="@+id/login_editTextPassword"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/login_textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login_editTextPassword"
+        android:layout_alignParentStart="true"
+        android:text="@string/login_textViewPassword"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/login_editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_editTextEmail"
+        android:layout_toEndOf="@+id/login_textViewPassword"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_textViewPassword">
+
+        <Button
+            android:id="@+id/login_buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/login_buttonLogin"
+            android:layout_weight="1"
+            android:text="@string/login_buttonRegister" />
+
+        <Button
+            android:id="@+id/login_buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:text="@string/login_buttonLogin"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_buttonForgotLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:text="@string/login_buttonForgotLogin" />
+</RelativeLayout>

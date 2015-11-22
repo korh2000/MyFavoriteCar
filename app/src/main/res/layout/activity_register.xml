@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/register_textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/register_textViewEmail"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/register_editTextEmail"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/register_textViewEmail"
+        android:layout_alignStart="@+id/register_editTextPassword"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_alignEnd="@+id/register_editTextPassword" />
+
+    <TextView
+        android:id="@+id/register_textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/register_editTextPassword"
+        android:layout_alignParentStart="true"
+        android:text="@string/register_textViewPassword"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/register_editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/register_editTextEmail"
+        android:layout_toEndOf="@+id/register_textViewPassword" />
+
+    <TextView
+        android:id="@+id/register_textViewReEnterPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/register_textViewPassword"
+        android:layout_marginTop="20dp"
+        android:text="@string/register_textViewReEnterPassword"
+        />
+
+    <EditText
+        android:id="@+id/register_editTextReEnterPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/register_textViewReEnterPassword"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignEnd="@+id/register_editTextPassword" />
+
+    <Button
+        android:id="@+id/register_bottonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/register_editTextReEnterPassword"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/register_textViewReEnterPassword"
+        android:layout_marginTop="21dp"
+        android:text="@string/register_bottonRegister" />
+
+</RelativeLayout>

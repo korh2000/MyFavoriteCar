@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/car_textViewMyCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/car_textViewMyCar"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/carTextViewBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/car_textViewMyCar"
+        android:layout_marginTop="20dp"
+        android:text="@string/carTextViewBrand"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/carSpinnerBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/carTextViewBrand"
+        android:layout_alignStart="@+id/car_textViewMyCar"
+        android:layout_alignTop="@+id/carTextViewBrand" />
+
+    <TextView
+        android:id="@+id/carTextViewModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/carTextViewBrand"
+        android:layout_marginTop="20dp"
+        android:text="@string/carTextViewModel"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/carEditTextModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/carTextViewModel"
+        android:layout_alignStart="@+id/carSpinnerBrand"
+        android:inputType="text"
+        android:layout_below="@+id/carSpinnerBrand"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/carTextViewYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/carTextViewModel"
+        android:layout_marginTop="20dp"
+        android:text="@string/carTextViewYear"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/carEditTextYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/carTextViewYear"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/carEditTextModel"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/carEditTextModel" />
+
+    <TextView
+        android:id="@+id/carTextViewVin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/carTextViewYear"
+        android:layout_marginTop="20dp"
+        android:text="@string/carTextViewVin"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/carEditTextVin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/carTextViewVin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/carEditTextYear"
+        android:inputType="text"
+        android:layout_below="@+id/carEditTextYear" />
+
+    <TextView
+        android:id="@+id/carTextVievMileageStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/carTextViewVin"
+        android:layout_marginTop="20dp"
+        android:text="@string/carTextVievMileageStart"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/carEditTextMileageStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/carTextVievMileageStart"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/carEditTextVin"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/carEditTextVin" />
+
+    <TextView
+        android:id="@+id/carTextViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/carTextVievMileageStart"
+        android:layout_marginTop="20dp"
+        android:text="@string/carTextViewDate"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/carEditTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/carTextViewDate"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/carEditTextVin"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/carTextViewMileageUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/carTextViewDate"
+        android:layout_marginTop="20dp"
+        android:text="@string/carTextViewMileageUnit"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/carSpinnercarMileageUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/carTextViewMileageUnit"
+        android:layout_alignStart="@+id/carEditTextDate"
+        android:layout_alignTop="@+id/carTextViewMileageUnit" />
+
+    <TextView
+        android:id="@+id/carTextViewCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/carTextViewMileageUnit"
+        android:layout_marginTop="20dp"
+        android:text="@string/carTextViewCurrency"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/carSpinnerCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/carTextViewCurrency"
+        android:layout_alignStart="@+id/carSpinnercarMileageUnit"
+        android:layout_alignTop="@+id/carTextViewCurrency" />
+
+    <TextView
+        android:id="@+id/carTextViewFuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/carTextViewCurrency"
+        android:layout_marginTop="20dp"
+        android:text="@string/carTextViewFuel"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/carSpinnerFuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/carTextViewFuel"
+        android:layout_alignStart="@+id/carSpinnerCurrency"
+        android:layout_alignTop="@+id/carTextViewFuel" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carButtonSave"
+        android:id="@+id/carButtonSave"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
